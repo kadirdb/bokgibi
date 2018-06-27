@@ -2,503 +2,512 @@
 <html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Shards Demo - A free and modern UI toolkit for web makers</title>
-  <meta name="description" content="A free and modern UI toolkit for web makers based on the popular Bootstrap 4 framework.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/shards.min.css?v=2.0.1">
-  <link rel="stylesheet" href="css/shards-demo.min.css?v=2.0.1">
-    
-    
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shards Demo - A free and modern UI toolkit for web makers</title>
+    <meta name="description"
+          content="A free and modern UI toolkit for web makers based on the popular Bootstrap 4 framework.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/shards.min.css?v=2.0.1">
+    <link rel="stylesheet" href="css/shards-demo.min.css?v=2.0.1">
+
+
     <style>
-        
-        .card-link{  
-             text-decoration: none;
+
+        .card-link {
+            text-decoration: none;
         }
-          .card{  
-              box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+
+        .card {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
         }
-        
-        .card:hover{
-            
-             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+
+        .card:hover {
+
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
         }
-        
-        
+
         .card-img-top {
-  overflow: hidden;
-  position: relative;
-}
-.card-img-top:after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255,255,255,0.3);
-  opacity: 0;
-  transition: opacity .25s;
-}
-.card-img-top img {
-  transition: transform .25s;
-  width: 100%;
-}
-.card-img-top:hover img {
-  transform: scale(1.2);
-}
-.card-img-top:hover:after {
-  opacity: 1;
-}
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-img-top:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transition: opacity .25s;
+        }
+
+        .card-img-top img {
+            transition: transform .25s;
+            width: 100%;
+        }
+
+        .card-img-top:hover img {
+            transform: scale(1.2);
+        }
+
+        .card-img-top:hover:after {
+            opacity: 1;
+        }
     </style>
 </head>
 
 <body>
-  <div class="loader">
+<div class="loader">
     <div class="page-loader"></div>
-  </div>
+</div>
 
-    
-    
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-4 fixed-top">
-          <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
-          <a class="navbar-brand" href="#">Gelinlik Merkezi</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-5" aria-controls="navbarNavDropdown-5"
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
+    <a class="navbar-brand" href="#">Gelinlik Merkezi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-5"
+            aria-controls="navbarNavDropdown-5"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown-5">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown-5">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">Ana Sayfa
-                  <span class="sr-only">(current)</span>
+                    <span class="sr-only">(current)</span>
                 </a>
-              </li>
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">Gelinlik Modelleri</a>
-              </li>
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="https://designrevision.com" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Services
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://designrevision.com" id="navbarDropdownMenuLink-5"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-5">
-                  <a class="dropdown-item" href="#">Design</a>
-                  <a class="dropdown-item" href="#">Development</a>
-                  <a class="dropdown-item" href="#">Marketing</a>
+                    <a class="dropdown-item" href="#">Design</a>
+                    <a class="dropdown-item" href="#">Development</a>
+                    <a class="dropdown-item" href="#">Marketing</a>
                 </div>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item">
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa fa-twitter"></i>
+                    <i class="fa fa-twitter"></i>
                 </a>
-              </li>
+            </li>
 
-              <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa fa-facebook"></i>
+                    <i class="fa fa-facebook"></i>
                 </a>
-              </li>
+            </li>
 
-              <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-pinterest"></i>
                 </a>
-              </li>
+            </li>
 
-              <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa fa-instagram"></i>
+                    <i class="fa fa-instagram"></i>
                 </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-    
+            </li>
+        </ul>
+    </div>
+</nav>
 
 
-  <!-- Page Content -->
-  <div class="page-content">
+<!--
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-5"
+            aria-controls="navbarNavDropdown-5"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown-5">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Ana Sayfa
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gelinlik Modelleri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://designrevision.com" id="navbarDropdownMenuLink-5"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-5">
+                    <a class="dropdown-item" href="#">Design</a>
+                    <a class="dropdown-item" href="#">Development</a>
+                    <a class="dropdown-item" href="#">Marketing</a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+-->
+
+
+
+<!-- Page Content -->
+<div class="page-content">
     <!-- Content -->
-      
+
     <div class="content clearfix">
 
-    
-        
-        
-        
-      <!-- Cards -->
-      <div id="cards" class="container container-fluid mb-2">
 
-          
-          
-        <div class="col-md-12 ml-auto mr-auto">   
-            
-    <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Gelinlik Modelleri</li>
-      
-  </ol>
-            </nav>
-            
-       
-          <div class="row">
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="detay.html">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/3.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/1.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
-              
-              </div>
-              </a> 
-            </div>
-              
-              
-              
-              
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/4.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/5.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/6.jpg" alt="Card image cap">
-              </div>
-              </a> 
-            </div>
-              
-              
-              
-              
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/7.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/8.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/9.jpg" alt="Card image cap">
-              </div>
-              </a> 
-            </div>
-              
-              
-              
-              
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="detay.html">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/3.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/1.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
-              
-              </div>
-              </a> 
-            </div>
-              
-              
-              
-              
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/4.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/5.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/6.jpg" alt="Card image cap">
-              </div>
-              </a> 
-            </div>
-              
-              
-              
-              
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/7.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/8.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/9.jpg" alt="Card image cap">
-              </div>
-              </a> 
-            </div>
-              
-              
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="detay.html">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/3.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/1.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
-              
-              </div>
-              </a> 
-            </div>
-              
-              
-              
-              
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/4.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/5.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/6.jpg" alt="Card image cap">
-              </div>
-              </a> 
-            </div>
-              
-              
-              
-              
-              
-          
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-                <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/7.jpg" alt="Card image cap">
-              </div>
-                </a>  
-            </div>            
-              
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/8.jpg" alt="Card image cap">
-              </div>  
-                </a> 
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
-                 <a class="card-link" href="#">
-              <div class="card">
-                <img class="card-img" src="images/demo/stock-photos/9.jpg" alt="Card image cap">
-              </div>
-              </a> 
-            </div>
-              
-              
-              
+        <!-- Cards -->
+        <div id="cards" class="container container-fluid mb-2">
 
 
+            <div class="col-md-12 ml-auto mr-auto">
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Gelinlik Modelleri</li>
+
+                    </ol>
+                </nav>
 
 
+                <div class="row">
 
-          </div>
-   
-          
-          </div>
-     
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="detay.html">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/3.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/1.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/4.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/5.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/6.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/7.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/8.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/9.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="detay.html">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/3.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/1.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/4.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/5.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/6.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/7.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/8.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/9.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="detay.html">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/3.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/1.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/4.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/5.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/6.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/7.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/8.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12">
+                        <a class="card-link" href="#">
+                            <div class="card">
+                                <img class="card-img" src="images/demo/stock-photos/9.jpg" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
         </div>
 
-        
-        
-        
-        
-        
-        
-        
+
     </div>
 
 
-          <!-- Documentation -->
-      
-      
-      
+    <!-- Documentation -->
+
+
     <div id="aciklama" class="bg-white">
-      <div class="section-title container ml-auto mr-auto py-5">
-        <div class="col-lg-8 col-md-10 ml-auto mr-auto py-5">
-          <h1 class="mb-2 text-center">Gelinlik Modelleri</h1>
-          <p class="text-center"  style="font-family: Arial, Helvetica, sans-serif;">Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. </p>         
+        <div class="section-title container ml-auto mr-auto py-5">
+            <div class="col-lg-8 col-md-10 ml-auto mr-auto py-5">
+                <h1 class="mb-2 text-center">Gelinlik Modelleri</h1>
+                <p class="text-center" style="font-family: Arial, Helvetica, sans-serif;">Dünyanın en güzel gelinlik
+                    modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel
+                    gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın
+                    en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin bulunduğu yer.
+                    Dünyanın en güzel gelinlik modellerinin bulunduğu yer. Dünyanın en güzel gelinlik modellerinin
+                    bulunduğu yer. </p>
+            </div>
         </div>
-      </div>
     </div>
-      
-      
-      
-   
-   
- 
-    <footer class="main-footer py-5">
-      <p class="text-muted text-center small p-0 mb-4">&copy; Copyright 2018 — DesignRevision</p>
-      <div class="social d-table mx-auto">
-        <a class="twitter mx-3 h4 d-inline-block text-secondary" href="https://twitter.com/DesignRevision" target="_blank">
-          <i class="fa fa-twitter"></i>
-          <span class="sr-only">View our Twitter Profile</span>
-        </a>
-        <a class="facebook mx-3 h4 d-inline-block text-secondary" href="https://www.facebook.com/designrevision" target="_blank">
-          <i class="fa fa-facebook"></i>
-          <span class="sr-only">View our Facebook Profile
-            <span>
-        </a>
-        <a class="github mx-3 h4 d-inline-block text-secondary" href="https://github.com/designrevision" target="_blank">
-          <i class="fa fa-github"></i>
-          <span class="sr-only">View our GitHub Profile</span>
-        </a>
-      </div>
-    </footer>
-  </div>
 
-        
-        
-        
-        
-  <!-- JavaScript -->
-  <div id="fb-root"></div>
-  <script>
+
+    <footer class="main-footer py-5">
+        <p class="text-muted text-center small p-0 mb-4">&copy; Copyright 2018 — DesignRevision</p>
+        <div class="social d-table mx-auto">
+            <a class="twitter mx-3 h4 d-inline-block text-secondary" href="https://twitter.com/DesignRevision"
+               target="_blank">
+                <i class="fa fa-twitter"></i>
+                <span class="sr-only">View our Twitter Profile</span>
+            </a>
+            <a class="facebook mx-3 h4 d-inline-block text-secondary" href="https://www.facebook.com/designrevision"
+               target="_blank">
+                <i class="fa fa-facebook"></i>
+                <span class="sr-only">View our Facebook Profile
+            <span>
+            </a>
+            <a class="github mx-3 h4 d-inline-block text-secondary" href="https://github.com/designrevision"
+               target="_blank">
+                <i class="fa fa-github"></i>
+                <span class="sr-only">View our GitHub Profile</span>
+            </a>
+        </div>
+    </footer>
+</div>
+
+
+<!-- JavaScript -->
+<div id="fb-root"></div>
+<script>
     (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1662270373824826";
-      fjs.parentNode.insertBefore(js, fjs);
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1662270373824826";
+        fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-  </script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="js/shards.min.js"></script>
-  <script src="js/demo.min.js"></script>
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/shards.min.js"></script>
+<script src="js/demo.min.js"></script>
 
 </body>
 
