@@ -11,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kategori.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kategori.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kategori.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -27,6 +27,15 @@
                 <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#17476#17482#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TO.DO.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TO.DO.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -98,6 +107,7 @@
         <option value="$PROJECT_DIR$/magaza.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/kategori.html" />
+        <option value="$PROJECT_DIR$/TO.DO.txt" />
       </list>
     </option>
   </component>
@@ -110,11 +120,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -176,15 +184,16 @@
       <workItem from="1530158963074" duration="4144000" />
       <workItem from="1530173208681" duration="4503000" />
       <workItem from="1530215647449" duration="9373000" />
-      <workItem from="1531129676995" duration="1460000" />
+      <workItem from="1531129676995" duration="1719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32639000" />
+    <option name="totallyTimeSpent" value="32898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -443,6 +452,13 @@
             <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="e#17476#17482#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TO.DO.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>

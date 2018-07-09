@@ -1,0 +1,14 @@
+Front-End
+
+- magazalar.html (Tüm mağazaları listeyeceğim sayfa. isme göre, puana göre sıralama şeklinde bir yapı olacak. sayfalama olacak. mağazalar ana sayfadaki gibi görünecek. mağaza ürün sayısı da detay olarak gösterilebilir)
+
+
+Back-End
+
+- sitemap.xml (sitemap.xml'i oluşturacak olan bir php dosyası olacak. sitemapolustur.php. Bu dosya cronjab ile her gün 1 kez oluşturulacak)
+
+
+Veritabanı
+
+
+
