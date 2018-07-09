@@ -14,13 +14,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/shards.min.css?v=2.0.1">
     <link rel="stylesheet" href="css/shards-demo.min.css?v=2.0.1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 
     <style>
-
-        html, body {
-            font-family: 'Roboto', sans-serif;
-        }
 
         .card-link {
             text-decoration: none;
@@ -29,19 +25,12 @@
         .card {
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;
-            overflow: hidden;
         }
 
         .card:hover {
+
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
         }
-
-        .card img:hover {
-            transform:scale(1.05);
-            transition: ease-in-out 1s;
-        }
-
-
 
         .username-space {
             margin-top: -8px !important;
@@ -73,78 +62,24 @@
       .card-img-top:hover:after {
         opacity: 1;
       }*/
-        .index-list {
-            margin-bottom: 30px
-        }
+        .index-list {margin-bottom: 30px}
+        .index-list a {position: relative;width: 100%;height: 100%;display: block;}
+        .index-list a img {width:100%;}
+        .gizle {display: none;}
+        .index-list a .desc {position: absolute;width: 94%;left:0;bottom:0;z-index:2;height:40px;line-height: 40px;padding-left: 15px;font-size: 17px;font-weight: 400;margin:3%;text-transform: uppercase;}
+        .typefull a .desc {width:40%;height:60px;line-height: 20px;padding-top:10px;font-size:16px;}
+        .type1 a .desc {width:40%;height:60px;line-height: 20px;padding-top:10px;font-size:16px;}
+        .type2 a .desc {width:40%;height:60px;line-height: 20px;padding-top:10px;font-size:16px;top:0 ;}
+        .siyah a .desc {background: rgba(0, 0, 0, 0.6) !important;color:#fff;border:1px dashed #000;border-left:4px solid #f70378;}
+        .beyaz a .desc {background: rgba(255, 255, 255, 0.9) !important;color:#000;border:1px dashed #fff	;border-left:4px solid #f70378;}
 
-        .index-list a {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
 
-        .index-list a img {
-            width: 100%;
-        }
 
-        .gizle {
-            display: none;
-        }
 
-        .index-list a .desc {
-            position: absolute;
-            width: 94%;
-            left: 0;
-            bottom: 0;
-            z-index: 2;
-            height: 40px;
-            line-height: 40px;
-            padding-left: 15px;
-            font-size: 17px;
-            font-weight: 400;
-            margin: 3% 3% 4%;
-        }
 
-        .typefull a .desc {
-            width: 40%;
-            height: 60px;
-            line-height: 20px;
-            padding-top: 10px;
-            font-size: 16px;
-        }
 
-        .type1 a .desc {
-            width: 40%;
-            height: 60px;
-            line-height: 20px;
-            padding-top: 10px;
-            font-size: 16px;
-        }
 
-        .type2 a .desc {
-            width: 40%;
-            height: 60px;
-            line-height: 20px;
-            padding-top: 10px;
-            font-size: 16px;
-            top: 0;
-        }
 
-        .siyah a .desc {
-            background: rgba(0, 0, 0, 0.6) !important;
-            color: #fff;
-            /*  border: 1px dotted #000;*/
-            border-left: 4px solid #c4183c;
-            /*  box-shadow: 0px 4px 41px 8px rgba(0,0,0,0.57);*/
-        }
-
-        .beyaz a .desc {
-            background: rgba(255, 255, 255, 0.9) !important;
-            color: #000;
-            border: 1px solid #fff;
-            border-left: 4px solid #c4183c;
-        }
 
 
     </style>
@@ -172,22 +107,22 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Mağazalar</a>
+                <a class="nav-link" href="#">Gelinlik Modelleri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="https://designrevision.com" id="navbarDropdownMenuLink-5"
                    data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-                    Kategoriler
+                    Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-5">
-                    <a class="dropdown-item" href="#">Gelinlik Modelleri</a>
-                    <a class="dropdown-item" href="#">Abiye Modelleri</a>
-                    <a class="dropdown-item" href="#">Damatlık Modelleri</a>
+                    <a class="dropdown-item" href="#">Design</a>
+                    <a class="dropdown-item" href="#">Development</a>
+                    <a class="dropdown-item" href="#">Marketing</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">İletişim</a>
             </li>
         </ul>
         <ul class="navbar-nav">
@@ -232,15 +167,11 @@
 
             <div class="col-md-12 ml-auto mr-auto">
 
-
-                <div class="row">
-                    <div class="col-12">
-
-                        <h2 class="text-center mt-3 mb-4">Kategoriler</h2>
-
-                    </div>
-                </div>
-
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Ana Sayfa</li>
+                    </ol>
+                </nav>
 
                 <div class="row">
 
@@ -249,9 +180,9 @@
                         <a class="card-link" href="kategori.html">
                             <div class="card">
                                 <div class="gizle desc" style="display:block">
-                                    <b>Gelinlik Modelleri</b>
+                                    <b>Gelinlik modelleri</b>
                                 </div>
-                                <img class="card-img" src="https://scontent-frx5-1.cdninstagram.com/vp/c5e3aaa233d70ec6c439659902fe11db/5BACDC95/t51.2885-15/e35/35325077_243718689694764_2867725177930645504_n.jpg" alt="Card image cap">
+                                <img class="card-img" src="images/demo/stock-photos/3.jpg" alt="Card image cap">
                             </div>
                         </a>
                     </div>
@@ -260,10 +191,13 @@
                         <a class="card-link" href="#">
                             <div class="card">
                                 <div class="gizle desc" style="display:block">
-                                    <b>Abiye Modelleri</b>
+                                    <b>Gelinlik modelleri</b>
                                 </div>
-                            <!--    <img class="card-img" src="https://placehold.it/280x328" alt="Card image cap">-->
-                                <img class="card-img" src="images/2a.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="images/demo/stock-photos/1.jpg" alt="Card image cap">
+                                <div class="card-body py-3">
+                                    <h5 class="text-center m-0">Abiye Modelleri</h5>
+
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -272,9 +206,12 @@
                         <a class="card-link" href="#">
                             <div class="card">
                                 <div class="gizle desc" style="display:block">
-                                    <b>Abiye Elbiseler</b>
+                                    <b>Gelinlik modelleri</b>
                                 </div>
-                                <img class="card-img" src="images/3a.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
+                                <div class="card-body py-3">
+                                    <h5 class="text-center m-0">Abiye kıyafetler</h5>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -283,10 +220,11 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12 index-list siyah">
                         <a class="card-link" href="#">
                             <div class="card">
-                                <div class="gizle desc" style="display:block">
-                                    <b>Nişan Kıyafetleri</b>
+                                <img class="card-img-top" src="images/demo/stock-photos/4.jpg" alt="Card image cap">
+                                <div class="card-body py-3">
+                                    <h5 class="text-center m-0">Nişan Kıyafetleri</h5>
+
                                 </div>
-                                <img class="card-img" src="images/demo/stock-photos/4.jpg" alt="Card image cap">
                             </div>
                         </a>
                     </div>
@@ -294,10 +232,11 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12 index-list siyah">
                         <a class="card-link" href="#">
                             <div class="card">
-                                <div class="gizle desc" style="display:block">
-                                    <b>Damatlık Modelleri</b>
+                                <img class="card-img-top" src="images/demo/stock-photos/5.jpg" alt="Card image cap">
+                                <div class="card-body py-3">
+                                    <h5 class="text-center m-0">Damatlık modelleri</h5>
+
                                 </div>
-                                <img class="card-img" src="images/demo/stock-photos/5.jpg" alt="Card image cap">
                             </div>
                         </a>
                     </div>
@@ -305,10 +244,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12 index-list siyah">
                         <a class="card-link" href="#">
                             <div class="card">
-                                <div class="gizle desc" style="display:block">
-                                    <b>Kapalı Gelinlik Modelleri</b>
+                                <img class="card-img-top" src="images/demo/stock-photos/6.jpg" alt="Card image cap">
+                                <div class="card-body py-3">
+                                    <h5 class="text-center m-0">Kapalı Gelinlik modelleri</h5>
                                 </div>
-                                <img class="card-img" src="images/demo/stock-photos/6.jpg" alt="Card image cap">
                             </div>
                         </a>
                     </div>
@@ -317,10 +256,11 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12 index-list siyah">
                         <a class="card-link" href="#">
                             <div class="card">
-                                <div class="gizle desc" style="display:block">
-                                    <b>Dekolte Gelinlik Modelleri</b>
+                                <img class="card-img-top" src="images/demo/stock-photos/7.jpg" alt="Card image cap">
+                                <div class="card-body py-3">
+                                    <h5 class="text-center m-0">Dekolte Gelinlik modelleri</h5>
+
                                 </div>
-                                <img class="card-img" src="images/demo/stock-photos/7.jpg" alt="Card image cap">
                             </div>
                         </a>
                     </div>
@@ -328,10 +268,11 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12 index-list siyah">
                         <a class="card-link" href="#">
                             <div class="card">
-                                <div class="gizle desc" style="display:block">
-                                    <b>Nikah Hediyelikleri</b>
+                                <img class="card-img-top" src="images/demo/stock-photos/8.jpg" alt="Card image cap">
+                                <div class="card-body py-3">
+                                    <h5 class="text-center m-0">Nikah Hediyelikleri</h5>
+
                                 </div>
-                                <img class="card-img" src="images/demo/stock-photos/8.jpg" alt="Card image cap">
                             </div>
                         </a>
                     </div>
@@ -339,10 +280,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-12 index-list siyah">
                         <a class="card-link" href="#">
                             <div class="card">
-                                <div class="gizle desc" style="display:block">
-                                    <b>Gelin Saçı Modelleri</b>
+                                <img class="card-img-top" src="images/demo/stock-photos/9.jpg" alt="Card image cap">
+                                <div class="card-body py-3">
+                                    <h5 class="text-center m-0">Gelin Saçı Modelleri</h5>
                                 </div>
-                                <img class="card-img" src="images/demo/stock-photos/9.jpg" alt="Card image cap">
                             </div>
                         </a>
                     </div>
@@ -364,7 +305,7 @@
             <div class="row">
                 <div class="col-12">
 
-                    <h2 class="text-center mt-5 mb-4">Popüler Mağazalar</h2>
+                    <h2 class="text-center mt-4">Mağazalar</h2>
 
                 </div>
             </div>
@@ -652,8 +593,6 @@
             </a>
         </div>
     </footer>
-
-
 </div>
 
 
